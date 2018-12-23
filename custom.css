@@ -1,19 +1,42 @@
 
+
+/* ===============
+            Display
+  =============== */
 body {
-    background-color: lightgray;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+li {
+    padding: 0 10px;
+}
+
+.page {
+    height: 850px;
+    padding-top: 80px;
 }
 
 header {
-    padding-bottom: 75px;
+    padding-bottom: 200px;
+    color: white;
 }
 
-caption {
-    caption-side: top;
-    padding-bottom: 0;
+.parallax {
+    color: black;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+        url("img/calm.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-th {
-    padding: 10px;
+/* ===== Footer ===== */
+
+form {
+    width: 400px;
+    margin: auto;
 }
 
 footer {
@@ -26,17 +49,73 @@ footer li {
     padding: 0 10px;
 }
 
-.page {
-    height: 744px;
-    border-bottom: 1px solid black;
+/* ===== Contact Form ===== */
+
+.form-control {
+    margin-bottom: 2px;
+    border: none;
+    border-radius: 0;
+    background: #1E242C;
+    color: white;
+}
+
+.form-control:focus {
+    background: #1E242C;
+    color: white;
 }
 
 .contact {
     height: 644px;
     border-bottom: 1px solid black;
-    margin-top: 150px;
 }
 
 .page-top {
-    margin-top: 100px;
+    padding-top: 100px;
+}
+
+/* ===============
+             Styling
+  =============== */
+
+  .my-pic {
+      border: 1px solid black;
+      border-radius: 50%;
+  }
+
+/* ===== Skills Chart ===== */
+
+.skills {
+    margin-bottom: 50px;
+}
+
+.bar {
+    margin: 10px auto;
+    width: 350px;
+    height: 26px;
+    background: whitesmoke;
+}
+
+.bar-fill {
+    background: lightseagreen;
+}
+
+.bar-tag {
+    font-size: .8em;
+    text-align: center;
+    padding: 3.5px;
+    width: 75px;
+    background: powderblue;
+    font-weight: bold;
+}
+
+/* ===============
+        Media Queries
+  =============== */
+
+@media (min-width: 515px) {
+
+    .bar {
+        width: 500px;
+    }
+
 }
